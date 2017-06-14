@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="This virtual calculator does arithmetic operations."/>
+    <meta name="keywords" content="calculator, jquery, jquery calculator"/>
+    <meta name="robots" content="index/follow"/>
+    <meta name="author" content="Jonalbert Encina"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="calc.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="calc.css"/>
+    <title>jQuery Calculator</title>
+  </head>
+  <body>
+    <!--Create a Boostrap container-->
+    <div class="container">
+      <!--This is the heading title on top of the 
+      calculator.-->
+      <div class="text-center">
+        <h1 class="hd">jQuery Calculator
+        </h1>
+      </div>
+    <!--This id for sizing the height, width, and 
+    background color of the calculator.-->
+      <div id="calcb">
+        <!--This is the heading title on the calculator.-->
+        <div class="clch">
+          <b>
+          jQuery Calculator
+          </b>
+        </div>
+        <!--This is for setting up the background size 
+        of the calcuator output.-->
+        <div class="coutb">
+          <!--This is for the white background size of 
+           the calculator.-->
+          <div class="coutput">
+            <span class="char">
+              <h4> Cursor: 
+                <!--This is the cursor position.-->
+                <span id="cr">
+                </span>
+                Char: 
+                <!--This is the total number of 
+                characters inputted.-->
+                <span id="chr">
+                </span>
+              </h4>
+            </span> <!--end of char-->
+            <h4>
+              <span id=stp>0
+              </span>
+            </h4>  
+          </div> <!--end of coutput-->
+        </div> <!--end of coutb-->
+        <!--These are all of the buttons for the
+        calculator.-->
+        <div id="calc"> 
+          <a class="btn btn-danger sb"id="clrAll">
+            AC
+          </a>
+          <a class="btn btn-danger sb" id="dlt">
+            CE
+          </a>
+          <a class="btn btn-info osb" id="/">
+            /
+          </a>
+          <a class="btn btn-info osb" id="*">
+            *
+          </a> <br/>
+          <a class="btn btn-info osb" id="7">
+            7
+          </a>
+          <a class="btn btn-info osb" id="8">
+            8
+          </a>
+          <a class="btn btn-info osb" id="9">
+            9
+          </a>
+          <a class="btn btn-info osb" id="-">
+            -
+          </a> <br/>
+
+          <a class="btn btn-info osb" id="4">
+            4
+          </a>
+
+          <a class="btn btn-info osb" id="5">
+            5
+          </a>
+
+          <a class="btn btn-info osb" id="6">
+            6
+          </a>
+
+          <a class="btn btn-info osb" id="+">
+            +
+          </a> <br/>
+
+          <a class="btn btn-info osb" id="1">
+            1
+          </a>
+
+          <a class="btn btn-info osb" id="2">
+            2
+          </a>
+
+          <a class="btn btn-info osb" id="3">
+            3
+          </a>
+
+          <a class="btn btn-info osb" id=".">
+            .
+          </a> <br/>
+
+          <a class="btn btn-info osb" id="0">
+            0
+          </a>
+          <a class="btn btn-info osb" id="tot">
+            =
+          </a>  
+          <a class="btn btn-info osb" id="<">
+            &lt
+          </a>
+          <a class="btn btn-info osb" id=">">
+            &gt
+          </a>
+        </div> <!--end of calc-->
+      </div> <!--end of calcb-->
+      <footer class="text-center">
+          <br/>  
+          <br/>
+          <br/>
+        <p style="color:white"> Written and made by <a    
+        href="https://www.freecodecamp.com/codebrave" 
+        target="_blank">Jonalbert Encina.</a>
+        </p>
+      </footer> <!--end of footer-->
+    </div> <!--end of container-->
+  </body>
+</html>
